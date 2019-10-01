@@ -1,18 +1,13 @@
-package abstractTest;
+package interfaceTest;
 
-public abstract class RBITest {
-	
-	public abstract void credit();//looks like interface 
+public interface RBITest {
 
-	public abstract void debit();//looks like interface no body only the description 
+	public static int interest = 5;
 
-	public static void loan() {//looks like inheritance
+	public  void credit();
 
-		System.out.println("world bank loan");
+	public  void debit();
 
-	}
-	/*
-	 * Its a combination of both inheritance n interface
-	 */
+	public  void loan();
 
 }
