@@ -1,13 +1,19 @@
-package interfaceTest;
+package inheritanceTest;
 
-public interface RBITest {
+public class RBITest extends WorldBankTest {
 
-	public static int interest = 5;
-
-	public  void credit();
-
-	public  void debit();
-
-	public  void loan();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// WorldBankTest.credit();
+		credit();
+		debit();
+		eduloan();
+		interest = interest+1;
+		System.out.println("Rbi Interest" + interest);
+	
+	}
+	public static void eduloan() {
+		System.out.println("RBI TEST EDU");
+	}
 
 }
